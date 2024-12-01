@@ -22,7 +22,7 @@ console.log(quote.getRandomQuote())
     <div>
       <h2>Inspirerende uitspraken</h2>
       <p>druk op de knop voor een nieuwe inspirerende uitspraak.</p>
-      <p><strong>{postQuote}</strong></p><br></br>
+      <div>{postQuote}</div>
       <button id='quotebtn' onClick={refreshPage}>Nieuwe quote</button>
 
     </div>
