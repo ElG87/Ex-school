@@ -13,7 +13,7 @@ $(document).ready(function () {
         method: 'GET',
         success: function(data){
             let content = $ (data).find("#blogdiv1").html();
-            $("blog1").html(content);
+            $("postblog1").html(content);
         }
     })
 })
