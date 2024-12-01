@@ -1,11 +1,12 @@
 $(document).ready(function () {
-/*  $("#postblog1").load("blog_artikelen.html", function(response, status, xhr){
+$("#postblog1").load("blog_artikelen.html", function(response, status, xhr){
     if(status === "error"){
         const msg = "Er is een fout opgetreden: ";
         $("#postblog1").html(msg + xhr.status + "" + xhr.statusText);
 
     }
-  });*/
+  });
+  
 /*Artikelen toevoegen aan blog*/
 const artikelen = [{
     title: "blog1",
