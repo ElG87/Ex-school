@@ -1,0 +1,215 @@
+/* De kleurvariabelen */
+:root {
+    --kleur-achtergrond1: #f5720c;    
+    --kleur-tekst1: #ffffff;
+    --kleur-tekst2: #000000;   
+    --kleur-tekst4: #f5720c;
+    --kleur-site1: #ffed00;
+    --kleur-site2: #be5505;
+    --kleur-site3: #ffffff;
+    --kleur-site4: #ffb489;
+    --kleur-border1: #cccccc;
+}
+
+html{
+    display: flex;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: var(--kleur-tekst2);
+    background-color: var(--kleur-site3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: var(--kleur-tekst1);
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--kleur-achtergrond1);
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+
+ /* De navigatie */
+ .navigatie {
+    display: block;    
+    font-size: .9em;   
+    background-color: var(--kleur-site2);
+    border-bottom: #ffed00 solid 3px;
+    margin: 0px;
+}
+
+/* De lijst bij de navigatie */
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+li{
+    padding: 5px;
+}
+
+/* De linken van de navigatie */
+a{
+    text-decoration: none;
+    color: var(--kleur-tekst1);
+}
+a:hover{  
+    color: var(--kleur-tekst2);
+}  
+
+/* Headingopmaak */
+h1 { 
+    display: block;    
+    font-size: 1.7em;
+    font-weight: bold;
+    color: var(--kleur-tekst1);    
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.4em;
+    text-align: left; 
+}
+
+h3 {
+    display: block;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.hh4 {
+    display: block;
+    color: var(--kleur-tekst1);
+    text-align: center;
+    font-weight: lighter;
+ }
+.side{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #333;
+ 
+}
+.main{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #333;
+}
+
+/* De container in main */
+.container {
+    box-sizing: content-box;
+    width: 100%;    
+}
+.main {
+    box-sizing: border-box;    
+    background-color:  var(--kleur-site4);
+    color: var(--kleur-tekst2);
+    width: 100%;    
+    float: left;
+    padding: 15px 15px 15px 15px;
+}
+.side {
+    box-sizing: border-box;
+    background-color:  var(--kleur-site3);    
+    width: 100%;   
+    padding: 15px 15px 15px 25px;
+}
+article{
+    margin-bottom: 20px;
+    
+}
+
+article{
+    color: #35424a;
+}
+
+article p{
+    margin: 10px 0;
+}
+
+  /*Opmaak footer*/
+  footer{
+    background-color:#b85301f6;
+    padding: 4% 0%;
+    text-align: center;
+}
+
+
+
+/* Opmaak vanaf 768px */
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+      float: left;
+      height: auto;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    /* Navigatiebalk */
+    nav {
+        box-sizing: border-box;
+        line-height: 30px;
+    }
+
+  ul {
+    overflow: hidden;
+    background-color: var(--kleur-site2);
+  }
+
+  li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 120px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(207, 91, 2);
+  } 
+  }
+
+  @media only screen and (min-width: 879px) {
+
+    body {
+        background-color: var(--kleur-tekst1)
+        };
+    };

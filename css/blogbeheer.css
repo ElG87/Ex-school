@@ -1,0 +1,263 @@
+/* De kleurvariabelen */
+/* De kleurvariabelen */
+:root {
+    --kleur-achtergrond1: #f5720c;    
+    --kleur-tekst1: #ffffff;
+    --kleur-tekst2: #000000;   
+    --kleur-tekst4: #f5720c;
+    --kleur-site1: #ffed00;
+    --kleur-site2: #be5505;
+    --kleur-site3: #ffffff;
+    --kleur-site4: #ffb489;
+    --kleur-border1: #cccccc;
+}
+
+/* De body van de pagina's */
+html {
+    display: flex;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: var(--kleur-tekst2);
+    background-color: var(--kleur-site3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: var(--kleur-tekst1);
+}
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--kleur-achtergrond1);
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.hh4 {
+    display: block;
+    color: var(--kleur-tekst1);
+    text-align: center;
+    font-weight: lighter;
+ }
+ 
+ /* De navigatie */
+.navigatie {
+    display: block;    
+    font-size: .9em;   
+    background-color: var(--kleur-site2);
+    border-bottom: #ffed00 solid 3px;
+    margin: 0px;
+}
+
+/* De lijst bij de navigatie */
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+li{
+    padding: 5px;
+}
+
+/* De linken van de navigatie */
+a{
+    text-decoration: none;
+    color: var(--kleur-tekst1);
+}
+a:hover{  
+    color: var(--kleur-tekst2);
+}  
+
+/* Knop back op blog pagina */
+#back, .knop {
+    text-decoration: none;
+    color: var(--kleur-tekst1);
+    cursor: pointer;
+    background-color:var(--kleur-tekst4);
+    padding: 10px;
+    border-color: var(--kleur-tekst4);
+    margin: 20px;
+}
+
+#back, .knop:hover {  
+    color: var(--kleur-tekst1);
+    background-color:var(--kleur-tekst4);
+}  
+
+/* Headingopmaak */
+h1 { 
+    display: block;    
+    font-size: 1.7em;
+    font-weight: bold;
+    color: var(--kleur-tekst1);    
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.4em;
+    text-align: left; 
+}
+
+h3 {
+    display: block;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+ /* De header */
+ header {
+    width: 100%;
+    background-color: var(--kleur-achtergrond1);
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.hh4 {
+    display: block;    
+    color: var(--kleur-tekst1);    
+    text-align: center;
+    font-weight: lighter;   
+}
+    
+
+/*Opmaak tekst*/
+p , .titel { 
+    padding: 4% 4% 0% 4%;
+    }
+    
+button{
+    display: inline-block;
+    padding: 1%;
+    margin: 2%;
+}
+
+#blog-posts{
+    margin-top: 20px;
+}
+
+#blog-form{
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#blog-form input, #blog-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#blog-form button{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#blog-form button:hover{
+background-color: #0056b3;
+}
+
+/*Opmaak footer*/
+    footer{
+    background-color:#b85301f6;
+    padding: 4% 0%;
+    text-align: center;
+    font-weight: bold; 
+}
+        
+/*Opmaak bij schermen vanaf 768px*/
+@media only screen and (min-width: 768px) {  
+
+    [class*="col-"]{
+        float: left;
+    } 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+        
+   
+
+#header{
+    padding: 5% 5% 8% 5%;
+}
+
+  /* Navigatiebalk */
+  nav {
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+ul {
+overflow: hidden;
+background-color: var(--kleur-site2);
+}
+
+li {
+list-style-type: none;
+display: block;
+float: left;
+width: 120px;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgb(207, 91, 2);
+} 
+
+
+#footer{
+    text-align: center;
+    width: 70%;
+    display: inline-block;
+    padding: 1%;
+    }
+
+#footer-tekst{
+    font-size: 100%;
+} 
+
+@media (max-width: 600px){
+    .post{
+        padding: 10px;
+    }
+}
+}
