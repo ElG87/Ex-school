@@ -135,11 +135,12 @@ img {
 }
 
 
-  /*Opmaak footer*/
-  footer{
+ /*Opmaak footer*/
+ footer{
     background-color:#b85301f6;
     padding: 4% 0%;
     text-align: center;
+    font-weight: bold; 
 }
 
 /* Opmaak vanaf 768px */
