@@ -7,6 +7,14 @@ $("#postblog1").load("blog_artikelen.html", function(response, status, xhr){
     }
   });
   
+  $('#preview-blog2').load('archief.html #blog-2 #img-blog2, #tweede-p, #date2');
+ 
+        $('#knop-blog-2').on('click', function(){
+            window.location.href='detailpagina.html';
+        });
+    
+    $('#huidige-blog').load('archief.html #blog-2');
+    ;
 /*Artikelen toevoegen aan blog*/
 const artikelen = [{
     title: "blog1",
