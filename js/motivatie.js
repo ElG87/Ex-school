@@ -14,9 +14,9 @@ document.getElementById('quote').innerText = randomQuote.text;
 */
 
 function App() {
-const quote = require('inspirational-quotes');
-let postQuote = quote.getRandomQuote()
-console.log(quote.getRandomQuote())
+const quotes = require('inspirational-quotes');
+let postQuote = quotes.getRandomQuote()
+console.log(quotes.getRandomQuote());
 
   return (
     <div>
