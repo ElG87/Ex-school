@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   $('#blogFormBtn').click(function(){
     $.ajax({
-        url: '../html/blog_artikelen.html',
+        url: 'html/blog_artikelen.html',
         method: 'GET',
         success: function(data){
             let content = $ (data).find("#blogdiv1").html();
