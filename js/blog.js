@@ -6,7 +6,23 @@ $(document).ready(function () {
 
     }
   });*/
+/*Artikelen toevoegen aan blog*/
+const artikelen = [{
+    title: "blog1",
+    content: "Inhoud van artikel 1",
+    date: "2024-12-01"
+},
+{
+    title: "blog2",
+    content: "Inhoud van artikel 2",
+    date: "2024-12-02"},
+];
+/*Artikelen ophalen*/
+application.get('/artikelen', (req, res) => {
+    res.json(artikelen);
+});
 
+  /*Formulier*/
   $('#blogFormBtn').click(function(){
     $.ajax({
         url: 'html/blog_artikelen.html',
