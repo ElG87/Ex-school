@@ -36,12 +36,12 @@ function refreshPage(){
 
 export default App;
 */
+/*
+    import { getQuote, getRandomQuote } from 'inspirational-quotes';
 
-    const Quote = require('inspirational-quotes');
-
-console.log(Quote.getQuote()); // returns quote (text and author)
-console.log(Quote.getQuote({ author: false })); // return quote without author
-console.log(Quote.getRandomQuote()); // return any random quote
+console.log(getQuote()); // returns quote (text and author)
+console.log(getQuote({ author: false })); // return quote without author
+console.log(getRandomQuote()); // return any random quote
 
 document.getElementById('quote').innerText = randomQuote.text;
 
@@ -54,3 +54,37 @@ return (
 
     </div>
   );
+*/
+  const arr = require('inspirational-quotes/data/data.json'),
+
+    // utility to generate a random number
+    randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min),
+    index = randomInt(0, arr.length), // random index to be used
+    
+    /**
+     * 
+     * Kept `getRandomQuote` method to ensure the backward compatibility as
+     * All the version <= `v1.0.8` has this method
+     * 
+     * TO BE DEPRECATED SOON
+     */
+    getRandomQuote = () => arr[index].text,
+
+    /**
+     * 
+     * By default, { author: true },
+     * To hide author, pass options as { author: false }
+     */
+    getQuote = (options) => {
+        !options && (options = {author: true}); // default option
+        return {
+            text: arr[index].text,
+            ...(options && options.author ? { author: arr[index].from } : {})
+        };
+    };
+
+module.exports = {
+    getRandomQuote,
+    getQuote
+};
+document.getElementById('quote').innerText = getRandomQuote.text;
