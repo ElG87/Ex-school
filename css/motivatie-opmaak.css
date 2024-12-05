@@ -1,6 +1,6 @@
 /* De kleurvariabelen */
 :root {
-    --kleur-achtergrond1: #f5720c;    
+    --kleur-achtergrond1: #ff7f00;    
     --kleur-tekst1: #ffffff;
     --kleur-tekst2: #000000;   
     --kleur-tekst4: #f5720c;
@@ -9,14 +9,14 @@
     --kleur-site3: #ffffff;
     --kleur-site4: #ffb489;
     --kleur-border1: #cccccc;
+    --kleur-teksten: #;
 }
 
-html{
-    display: flex;
-}
+
 
 body{
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -27,6 +27,8 @@ body{
 
 main {
     background-color: var(--kleur-tekst1);
+    text-align: center;
+    padding-bottom: 0;
 }
 
 /* Header */
@@ -35,17 +37,19 @@ header {
     background-color: var(--kleur-achtergrond1);
     background-position: center;
     text-align: center;
-    padding: 40px 0;
-    color: white;
+    padding: 10px 0;
+    color: #fff;
 }
 
  /* De navigatie */
  .navigatie {
-    display: block;    
+    display: flex;   
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    justify-content: left;
     font-size: .9em;   
-    background-color: var(--kleur-site2);
     border-bottom: #ffed00 solid 3px;
-    margin: 0px;
 }
 
 /* De lijst bij de navigatie */
@@ -148,17 +152,21 @@ article p{
     margin: 10px 0;
 }
 
+
+
   /*Opmaak footer*/
   footer{
     background-color:#b85301f6;
     padding: 4% 0%;
     text-align: center;
+    bottom: 0;
+    width: 100%;
 }
 
 
 
 /* Opmaak vanaf 768px */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     [class*="col-"] {
       float: left;
       height: auto;
@@ -177,21 +185,16 @@ article p{
     .col-12 {width: 100%;}
 
     /* Navigatiebalk */
-    nav {
-        box-sizing: border-box;
-        line-height: 30px;
-    }
+.navigatie {
+flex-direction: column;    }
 
   ul {
     overflow: hidden;
     background-color: var(--kleur-site2);
   }
 
-  li {
-    list-style-type: none;
-    display: block;
-    float: left;
-    width: 120px;
+  .navigatie li {
+    margin: 10px 0;
   }
 
   li a {

@@ -14,11 +14,13 @@ $(document).ready(function () {
             
             //Haalt de bron van de afbeelding op
             const imgSrc = $(this).find('img').attr('src')
+            console.log("Afbeelding pad: " + imgSrc); //Debugging regel
+            const imgPath = `afbeeldingen/${imgSrc}`;
 
                 // Voeg elk artikel toe aan het overzicht
                 $('#blog').append(`
                     <div class="artikel">
-                    ${imgSrc ?`<img src="${imgSrc}' alt="Artikel afbeelding">` :''}
+                    ${imgSrc ? `<img src="${imgSrc}' alt="Artikel afbeelding">` : ''}
                 <h2>${$(this).find('h2').text()}</h2>
                 
                 <p>${$(this).find('p').text()}</p>
