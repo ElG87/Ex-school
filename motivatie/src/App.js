@@ -11,7 +11,12 @@ function App() {
   useEffect(() => {
     //Haal een citaat op zodra de pagina is geladen
     setQuote(Quotes.getQuote());
-  }, []); // Zorg
+  }, []); // Zorg ervoor dat dit eenmaal uitgevoerd wordt.
+
+  const getNewQuote = () => {
+    //Haal een nieuwe citaat op wanneer de gebruiker de knop klikt
+    setQuote(Quotes.getQuote());
+  };
   
   return (
     <div className='App'>
