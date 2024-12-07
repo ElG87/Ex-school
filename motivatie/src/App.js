@@ -20,18 +20,20 @@ function App() {
   
   return (
     <div className='App'>
+    <section className="motivatie-sectie">
       <h1> Motivatie van de dag</h1>
         <div className='motivatie-container'>
         {quote ? (
           <div id="motivatie-quote">
             <p>"{quote.text}" </p>
             <p className='auteur'> - {quote.author}</p>
-            <button onClick={getNewQuote}>Volgende citaat</button>
-          </div>
-        ) : (
-          <p>Laad een citaat...</p>
-        )}
+    </>
+    ) : (
+          <p> Laad citaat..</p>
+    )}
         </div>
+           <button onClick={getNewQuote}>Volgende citaat</button>
+          </section>
     </div>
 );
 }
