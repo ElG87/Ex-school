@@ -23,9 +23,9 @@ function App() {
       <h1> Motivatie van de dag</h1>
         <div className='motivatie-container'>
         {quote ? (
-          <div>
-            <p className='motivatie-quote'>"{quote.text}" </p>
-            <p className='motivatie-author'> - {quote.author}</p>
+          <div id="motivatie-quote">
+            <p>"{quote.text}" </p>
+            <p className='auteur'> - {quote.author}</p>
             <button onClick={getNewQuote}>Volgende citaat</button>
           </div>
         ) : (
