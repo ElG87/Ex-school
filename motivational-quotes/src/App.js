@@ -45,6 +45,7 @@ export default App;
 // src/App.js
 
 import React, { useState} from 'react';
+import { BrowserRouter as Router, Router, Switch, Link } from 'react-router-dom';
 import './App.css';
 import InspirationalQuotes from 'inspirational-quotes'; // importeren van de module
 
