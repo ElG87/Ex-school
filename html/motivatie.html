@@ -37,10 +37,8 @@
       <section class="side">
         <h2>Dan ben je hier op de goede plek!</h2>
 <p>Even geen zin of motivatie? Klik hieronder.</p>
-<div id="motivatie-quote">
+<div id="react-root">
   <p>Quotes</p>
-  <p class="auteur">Auteur</p>
-<button id="quote-knop">Nieuwe Quote</button>
 </div>
     </section>
       <footer class="col-12">
@@ -50,10 +48,13 @@
         </div>
     </footer>
     </div>
-    <!-- JavaScript -->
-			<script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript" ></script>
-			<script src="../js/jquery-ui.js"></script>
-			<script src="../js/motivatie.js"></script>
-      <script type="module" src="../motivatie/src/App.js"></script>
+    <!-- React bibliotheek toevoegen -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script type="text/babel" src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>  <!--Zet JXS om naar JS en kan JSX in de browser verwerken-->
+    <script src="../js/motivatie.js"></script>
   </body>
 </html>

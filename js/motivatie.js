@@ -1,16 +1,12 @@
-/*
-function getQuote(){
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'localhost')
+$(document).ready(function() {
+console.log("Motivatie.js en Jquery doen het"); // Debugging regel
+
+console.log(typeof jQuery); // debugging regel
+
+function App() {
+  return <h1>Hallo, React werkt op een statische pagina!</h1>;
 }
-  */
-/*
-const { getQuote, getRandomQuote } = require('../lib/index'),
-quote = getQuote();
 
-console.log(`Here's a quote by "${quote.author}": "${quote.text}"\n`); // will return quote with author
-
-console.log(getRandomQuote()); // will return a random quote
-
-console.log(getQuote({ author: false })); // will return quote without author
-*/
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
+});
