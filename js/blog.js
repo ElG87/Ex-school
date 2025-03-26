@@ -20,7 +20,7 @@ $(document).ready(function () {
 
             // $(this).find('img').attr('src');
 
-            const imgPath = `afbeeldingen/${imgSrc}`;
+            const imgPath = `${imgSrc}`;
             
             //Foutcontrole bij geen weergave afbeelding
          const imgElement = $(this).find('img');
