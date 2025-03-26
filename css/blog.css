@@ -196,33 +196,31 @@ img {
   li a:hover {
     background-color: rgb(207, 91, 2);
   } 
-  }
+}
 
   @media only screen and (min-width: 879px) {
 
     body {
-        background-color: var(--kleur-tekst1)
-    };
+        background-color: var(--kleur-tekst1);
+    }
+
     #blogdiv1, #blogdiv2 {
         max-height: min-content;
         text-align: center;
         margin-bottom: 50px;
         display: block;
         padding: 5px;
-        }
- 
-  }
+    }
 
-  @media only screen and (min-width: 879px) {
     #blogdiv1, #blogdiv2, #blogdiv3, #blogdiv4, #blogdiv5 {
-        width: 8
-        0%;
+        width: 80%;
         text-align: center;
         margin: 50px;
         padding: 2%;
     }
-    
+
     .blogtekst {
         margin-left: 20px;
     }
-}
+
+  };
