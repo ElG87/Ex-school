@@ -31,17 +31,54 @@ main {
     padding-bottom: 0;
 }
 
-/* Header */
+/* Header styles */
 header {
-    width: 100%;
-    background-color: var(--kleur-achtergrond1);
-    background-position: center;
+    background-color: #f5720c; /* Same as blog.css */
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    color: #fff;
+    padding: 20px 0;
 }
 
- /* De navigatie */
+header h1 {
+    font-size: 2.5em; /* Ensure font size matches */
+    margin: 0;
+}
+
+header h4 {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+
+/* Navigation styles */
+.navigatie {
+    display: flex;   
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    justify-content: left; /* This conflicts with justify-content: center */
+    font-size: .9em;   
+    border-bottom: #ffed00 solid 3px; /* This conflicts with the blog.css border color */
+}
+
+.navigatie li {
+    margin: 0 10px;
+}
+
+.navigatie a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navigatie a:hover {
+    background-color: #f5720c;
+    border-radius: 5px;
+}
+
+/* De navigatie */
  .navigatie {
     display: flex;   
     list-style: none; 
@@ -163,7 +200,41 @@ article p{
     width: 100%;
 }
 
+/* Motivational Quotes Container */
+.motivational-quotes-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff3e0; /* Light background color */
+    border: 1px solid #f5720c; /* Match the header color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
+/* Quote Text */
+.motivational-quotes-container .quote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333; /* Darker text color for readability */
+    margin: 20px 0;
+}
+
+/* Quote Button */
+.motivational-quotes-container .quote-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #f5720c; /* Match the header color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.motivational-quotes-container .quote-button:hover {
+    background-color: #be5505; /* Darker shade on hover */
+}
 
 /* Opmaak vanaf 768px */
 @media only screen and (max-width: 768px) {
@@ -185,29 +256,23 @@ article p{
     .col-12 {width: 100%;}
 
     /* Navigatiebalk */
-.navigatie {
-flex-direction: column;    }
+    .navigatie {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
 
-  ul {
-    overflow: hidden;
-    background-color: var(--kleur-site2);
-  }
+    .navigatie li {
+        margin: 10px 0;
+    }
 
-  .navigatie li {
-    margin: 10px 0;
-  }
+    .navigatie a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+    }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: rgb(207, 91, 2);
-  } 
+    .navigatie a:hover {
+        background-color: rgb(207, 91, 2);
+    }
   }
 
   @media only screen and (min-width: 879px) {

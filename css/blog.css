@@ -1,8 +1,8 @@
-  /* De kleurvariabelen */
-  :root {
-    --kleur-achtergrond1: #f5720c;    
+/* Global Styles */
+:root {
+    --kleur-achtergrond1: #f5720c;
     --kleur-tekst1: #ffffff;
-    --kleur-tekst2: #000000;   
+    --kleur-tekst2: #000000;
     --kleur-tekst4: #f5720c;
     --kleur-site1: #ffed00;
     --kleur-site2: #be5505;
@@ -80,7 +80,7 @@ a:hover{
     color: var(--kleur-tekst1);
     cursor: pointer;
     background-color:var(--kleur-tekst4);
-    padding: 10px;
+    padding: 10px; 
     border-color: var(--kleur-tekst4);
     margin: 20px;
 }
@@ -100,6 +100,36 @@ h1 {
     padding: 0.5em;
 }
 
+/* Clear floats to ensure proper layout */
+.artikel {
+    overflow: hidden;
+    margin-bottom: 20px; /* Add spacing between articles */
+    width: 80%; /* Set a width for the articles */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: center; /* Center the text inside the articles */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff3e0; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.artikel img {
+    float: left; /* Float the image to the left */
+    width: 150px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 15px; /* Add spacing between the image and text */
+}
+
+.artikel h2 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+.artikel p {
+    margin: 0; /* Remove default margin */
+}
 
 h2 {
     display: block;
@@ -126,18 +156,30 @@ article{
 
 /* Afbeeldingen op de site */
 img {
-    max-width: 25%;
     float: left;
     width: 70%;
-    margin: 0px;
-    vertical-align: text-bottom;
+    margin: 0;
     height: auto;
 }
 
 .lees-meer {
-    display: block !important;
-    color: black !important;
-    font-size: 16px;
+    display: inline-block; /* Make it behave like a button */
+    background-color: #f5720c; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    margin: 10px;
+    border: black solid 1px; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.lees-meer:hover {
+    background-color: #151514; /* Darker background color on hover */
+    color: white; /* Ensure text remains white */
 }
 
  /*Opmaak footer*/
@@ -146,6 +188,52 @@ img {
     padding: 4% 0%;
     text-align: center;
     font-weight: bold; 
+}
+
+/* Center the #blog container */
+#blog {
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Stack the articles vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Make the container take the full height of the viewport */
+    margin: auto; /* Center the container itself */
+}
+
+/* Style for the author and date */
+.author, .date {
+    display: block; /* Display each on a new line */
+    margin-bottom: 5px; /* Add spacing between the lines */
+    font-size: 0.9em; /* Adjust font size */
+    color: #555; /* Set a subtle color */
+}
+
+.date {
+    font-style: italic; /* Make the date italic for differentiation */
+}
+
+/* Styling for the toggle button */
+#toggle-blog {
+    display: inline-block;
+    background-color: #f5720c;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: solid black 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: background-color 1s ease;
+}
+
+#toggle-blog:hover {
+    background-color: #0b0b09;
+}
+
+/* Blog content container */
+#blog-content {
+    display: block; /* Initially hidden */
 }
 
 /* Opmaak vanaf 768px */
