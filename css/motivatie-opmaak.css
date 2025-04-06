@@ -1,15 +1,14 @@
 /* De kleurvariabelen */
 :root {
-    --kleur-achtergrond1: #ff7f00;    
-    --kleur-tekst1: #ffffff;
-    --kleur-tekst2: #000000;   
-    --kleur-tekst4: #f5720c;
-    --kleur-site1: #ffed00;
-    --kleur-site2: #be5505;
-    --kleur-site3: #ffffff;
-    --kleur-site4: #ffb489;
-    --kleur-border1: #cccccc;
-    --kleur-teksten: #;
+  --kleur-achtergrond1: #f5720c;    
+  --kleur-tekst1: #ffffff;
+  --kleur-tekst2: #000000;   
+  --kleur-tekst4: #f5720c;
+  --kleur-site1: #ffed00;
+  --kleur-site2: #be5505;
+  --kleur-site3: #ffffff;
+  --kleur-site4: #ffb489;
+  --kleur-border1: #cccccc;
 }
 
 
@@ -25,123 +24,54 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--kleur-achtergrond1);
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  color: white;
+}
+
+
+/* De navigatie */
+.navigatie {
+  display: block;    
+  font-size: .9em;   
+  background-color: var(--kleur-site2);
+  border-bottom: #ffed00 solid 3px;
+  margin: 0px;
+}
+
+/* De lijst bij de navigatie */
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+li{
+  padding: 5px;
+}
+
+/* De linken van de navigatie */
+a{
+  text-decoration: none;
+  color: var(--kleur-tekst1);
+}
+a:hover{  
+  color: var(--kleur-tekst2);
+}  
+
+
 main {
     background-color: var(--kleur-tekst1);
     text-align: center;
     padding-bottom: 0;
 }
 
-/* Header styles */
-header {
-    background-color: #f5720c; /* Same as blog.css */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2.5em; /* Ensure font size matches */
-    margin: 0;
-}
-
-header h4 {
-    font-size: 1.2em;
-    margin: 5px 0 0;
-}
-
-/* Navigation styles */
-.navigatie {
-    display: flex;   
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    justify-content: left; /* This conflicts with justify-content: center */
-    font-size: .9em;   
-    border-bottom: #ffed00 solid 3px; /* This conflicts with the blog.css border color */
-}
-
-.navigatie li {
-    margin: 0 10px;
-}
-
-.navigatie a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    padding: 10px 15px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.navigatie a:hover {
-    background-color: #f5720c;
-    border-radius: 5px;
-}
-
-/* De navigatie */
- .navigatie {
-    display: flex;   
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    justify-content: left;
-    font-size: .9em;   
-    border-bottom: #ffed00 solid 3px;
-}
-
-/* De lijst bij de navigatie */
-ul{
-    list-style-type: none;
-    text-align: center;
-}
-
-li{
-    padding: 5px;
-}
-
-/* De linken van de navigatie */
-a{
-    text-decoration: none;
-    color: var(--kleur-tekst1);
-}
-a:hover{  
-    color: var(--kleur-tekst2);
-}  
-
-/* Headingopmaak */
-h1 { 
-    display: block;    
-    font-size: 1.7em;
-    font-weight: bold;
-    color: var(--kleur-tekst1);    
-    text-align: center;
-    padding: 0.5em;
-}
-
-
-h2 {
-    display: block;
-    font-size: 1.4em;
-    text-align: left; 
-}
-
-h3 {
-    display: block;
-    font-size: 1.3em;
-    text-align: left;
-}
-
-h4 {
-    font-size: 1.2em;
-}
-
-.hh4 {
-    display: block;
-    color: var(--kleur-tekst1);
-    text-align: center;
-    font-weight: lighter;
- }
-.side{
+.motivatievak{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -149,47 +79,6 @@ h4 {
     box-shadow: 0 0 10px #333;
  
 }
-.main{
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 10px #333;
-}
-
-/* De container in main */
-.container {
-    box-sizing: content-box;
-    width: 100%;    
-}
-.main {
-    box-sizing: border-box;    
-    background-color:  var(--kleur-site4);
-    color: var(--kleur-tekst2);
-    width: 100%;    
-    float: left;
-    padding: 15px 15px 15px 15px;
-}
-.side {
-    box-sizing: border-box;
-    background-color:  var(--kleur-site3);    
-    width: 100%;   
-    padding: 15px 15px 15px 25px;
-}
-article{
-    margin-bottom: 20px;
-    
-}
-
-article{
-    color: #35424a;
-}
-
-article p{
-    margin: 10px 0;
-}
-
-
 
   /*Opmaak footer*/
   footer{
@@ -201,43 +90,21 @@ article p{
 }
 
 /* Motivational Quotes Container */
-.motivational-quotes-container {
+.container-motivatie{
     text-align: center;
     margin: 40px auto;
     padding: 20px;
     max-width: 600px;
-    background-color: #fff3e0; /* Light background color */
-    border: 1px solid #f5720c; /* Match the header color */
+    background-color: #fff3e0; 
+    border: 1px solid #f5720c;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Quote Text */
-.motivational-quotes-container .quote {
-    font-style: italic;
-    font-size: 1.2em;
-    color: #333; /* Darker text color for readability */
-    margin: 20px 0;
-}
 
-/* Quote Button */
-.motivational-quotes-container .quote-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: white;
-    background-color: #f5720c; /* Match the header color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.motivational-quotes-container .quote-button:hover {
-    background-color: #be5505; /* Darker shade on hover */
-}
 
 /* Opmaak vanaf 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     [class*="col-"] {
       float: left;
       height: auto;
@@ -256,24 +123,35 @@ article p{
     .col-12 {width: 100%;}
 
     /* Navigatiebalk */
-    .navigatie {
-        flex-direction: column; /* Stack navigation items vertically */
-    }
+ nav {
+  box-sizing: border-box;
+  line-height: 30px;
+}
 
-    .navigatie li {
-        margin: 10px 0;
-    }
+ul {
+overflow: hidden;
+background-color: var(--kleur-site2);
+}
 
-    .navigatie a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-    }
+li {
+list-style-type: none;
+display: block;
+float: left;
+width: 120px;
+}
 
-    .navigatie a:hover {
-        background-color: rgb(207, 91, 2);
-    }
-  }
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgb(207, 91, 2);
+}
+}
 
   @media only screen and (min-width: 879px) {
 

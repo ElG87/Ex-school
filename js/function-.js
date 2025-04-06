@@ -26,7 +26,7 @@ $(function() {
 })
 
 $(function() {
-	var state = true;
+	let state = true;
 	$(".submit").on("click", function() {
 		if (state) {
 			$("#effect").animate({

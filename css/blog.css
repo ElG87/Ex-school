@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Kleuren variabelen */
 :root {
     --kleur-achtergrond1: #f5720c;
     --kleur-tekst1: #ffffff;
@@ -11,6 +11,7 @@
     --kleur-border1: #cccccc;
 }
 
+            /* Algemene pagina opmaak */
 html {
     display: flex;
 }
@@ -25,9 +26,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main {
-    background-color: var(--kleur-tekst1);
-}
+
 
 /* Header */
 header {
@@ -39,12 +38,6 @@ header {
     color: white;
 }
 
-.hh4 {
-    display: block;
-    color: var(--kleur-tekst1);
-    text-align: center;
-    font-weight: lighter;
- }
  
  /* De navigatie */
 .navigatie {
@@ -74,23 +67,46 @@ a:hover{
     color: var(--kleur-tekst2);
 }  
 
-/* Knop back op blog pagina */
+
+
+        /* Opmaak knoppen: */
+/* Opmaak 'back-knop' */
 #back, .knop {
     text-decoration: none;
     color: var(--kleur-tekst1);
     cursor: pointer;
     background-color:var(--kleur-tekst4);
     padding: 10px; 
-    border-color: var(--kleur-tekst4);
     margin: 20px;
 }
 
-#back, .knop:hover {  
+#back:hover, .knop:hover {  
     color: var(--kleur-tekst1);
     background-color:var(--kleur-tekst4);
 }  
 
-/* Headingopmaak */
+/* Opmaak 'Lees meer'-knop */
+.lees-meer {
+    display: inline-block;
+    background-color: #f5720c; 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 10px;
+    border: black solid 1px; 
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.lees-meer:hover {
+    background-color: #151514; 
+    color: white;
+}
+
+        /* Headingopmaak */
 h1 { 
     display: block;    
     font-size: 1.7em;
@@ -98,37 +114,6 @@ h1 {
     color: var(--kleur-tekst1);    
     text-align: center;
     padding: 0.5em;
-}
-
-/* Clear floats to ensure proper layout */
-.artikel {
-    overflow: hidden;
-    margin-bottom: 20px; /* Add spacing between articles */
-    width: 80%; /* Set a width for the articles */
-    max-width: 600px; /* Limit the maximum width */
-    text-align: center; /* Center the text inside the articles */
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff3e0; /* Light background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-.artikel img {
-    float: left; /* Float the image to the left */
-    width: 150px; /* Set a fixed width for the image */
-    height: auto; /* Maintain the aspect ratio */
-    margin-right: 15px; /* Add spacing between the image and text */
-}
-
-.artikel h2 {
-    margin: 0 0 10px;
-    font-size: 1.4em;
-    text-align: left;
-}
-
-.artikel p {
-    margin: 0; /* Remove default margin */
 }
 
 h2 {
@@ -146,6 +131,38 @@ h3 {
 h4 {
     font-size: 1.2em;
 }
+        /* Opmaak blog containers */
+.artikel {
+    overflow: hidden;
+    margin-bottom: 20px; 
+    width: 80%; 
+    max-width: 600px;
+    text-align: center; 
+    padding: 15px;
+    border: 1px solid #0f0c0c;
+    border-radius: 5px;
+    background-color: #f3c781; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artikel img {
+    float: left; 
+    width: 150px;
+    height: auto; 
+    margin-right: 15px; 
+}
+
+.artikel h2 {
+    margin: 0 0 10px;
+    font-size: 5 em;
+    text-align: left;
+}
+
+.artikel p {
+    margin: 0; 
+}
+
+
 article{
     margin: 20px;
     vertical-align: auto;
@@ -162,26 +179,6 @@ img {
     height: auto;
 }
 
-.lees-meer {
-    display: inline-block; /* Make it behave like a button */
-    background-color: #f5720c; /* Button background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Add padding for a button-like appearance */
-    margin: 10px;
-    border: black solid 1px; /* Remove default border */
-    border-radius: 5px; /* Add rounded corners */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px; /* Adjust font size */
-    text-align: center; /* Center the text */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.lees-meer:hover {
-    background-color: #151514; /* Darker background color on hover */
-    color: white; /* Ensure text remains white */
-}
-
  /*Opmaak footer*/
  footer{
     background-color:#b85301f6;
@@ -190,29 +187,29 @@ img {
     font-weight: bold; 
 }
 
-/* Center the #blog container */
+/* Opmaak #blog container */
 #blog {
-    display: flex; /* Use Flexbox for alignment */
-    flex-direction: column; /* Stack the articles vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Make the container take the full height of the viewport */
-    margin: auto; /* Center the container itself */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    margin: auto; 
 }
 
-/* Style for the author and date */
+/* Opmaak auteur en datum in blog */
 .author, .date {
-    display: block; /* Display each on a new line */
-    margin-bottom: 5px; /* Add spacing between the lines */
-    font-size: 0.9em; /* Adjust font size */
-    color: #555; /* Set a subtle color */
+    display: block; 
+    margin-bottom: 5px; 
+    font-size: 0.9em; 
+    color: #555; 
 }
 
 .date {
-    font-style: italic; /* Make the date italic for differentiation */
+    font-style: italic; 
 }
 
-/* Styling for the toggle button */
+
 #toggle-blog {
     display: inline-block;
     background-color: #f5720c;
@@ -231,11 +228,25 @@ img {
     background-color: #0b0b09;
 }
 
-/* Blog content container */
+
 #blog-content {
-    display: block; /* Initially hidden */
+    display: block; 
 }
 
+/* Blogtekst */
+.blogtekst {
+    line-height: 24px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: var(--kleur-site4);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+        padding: 4%;
+        display: block;
+        font-size: 14px;
+}
 /* Opmaak vanaf 768px */
 @media only screen and (min-width: 768px) {
     [class*="col-"] {
@@ -285,7 +296,7 @@ img {
     background-color: rgb(207, 91, 2);
   } 
 }
-
+    /* Opmaak vanaf 879px */
   @media only screen and (min-width: 879px) {
 
     body {

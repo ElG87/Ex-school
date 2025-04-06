@@ -17,8 +17,7 @@ function MotivationalQuotesApp() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            <h2>Even geen zin of motivatie nodig? Dan ben je hier op de goede plek!</h2>
-            <p> Klik hieronder.</p>
+            <h2> Inspiratie nodig? Zoek dan niet verder!</h2>
             <p style={{ fontStyle: 'italic', fontSize: '1.2em' }}>{quote}</p>
             <button onClick={generateNewQuote} style={{ padding: '10px 20px', fontSize: '1em' }}>
                 Klik hier voor een nieuwe quote!  </button>

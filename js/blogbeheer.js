@@ -22,8 +22,8 @@ $(document).ready(function () {
             alert('Uw tekst is te lang');
         }
     });
-
-    $("#artikelen").load("../html/blog_artikelen.html", function(respons,status,xhr){
+// Artikelen laden via AJAX
+    $(".artikelen").load("../html/blog_database.html", function(respons,status,xhr){
         if(status == "error"){
             const msg = "Er is een fout opgetreden:";
             

@@ -1,5 +1,4 @@
 /* De kleurvariabelen */
-/* De kleurvariabelen */
 :root {
     --kleur-achtergrond1: #f5720c;    
     --kleur-tekst1: #ffffff;
@@ -17,8 +16,9 @@ html {
     display: flex;
 }
 
-body {
-    min-height: 100vh;
+body{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -30,6 +30,7 @@ body {
 main {
     background-color: var(--kleur-tekst1);
 }
+
 /* Header */
 header {
     width: 100%;
@@ -40,12 +41,6 @@ header {
     color: white;
 }
 
-.hh4 {
-    display: block;
-    color: var(--kleur-tekst1);
-    text-align: center;
-    font-weight: lighter;
- }
  
  /* De navigatie */
 .navigatie {
@@ -75,23 +70,26 @@ a:hover{
     color: var(--kleur-tekst2);
 }  
 
-/* Knop back op blog pagina */
+
+        /* Opmaak knoppen: */
 #back, .knop {
     text-decoration: none;
     color: var(--kleur-tekst1);
     cursor: pointer;
     background-color:var(--kleur-tekst4);
-    padding: 10px;
+    padding: 5px; 
     border-color: var(--kleur-tekst4);
     margin: 20px;
+    border-radius: 5px;
+
 }
 
-#back, .knop:hover {  
+#back:hover, .knop :hover {  
     color: var(--kleur-tekst1);
-    background-color:var(--kleur-tekst4);
-}  
+    background-color:var(--kleur-tekst2);
+} 
 
-/* Headingopmaak */
+        /* Headingopmaak */
 h1 { 
     display: block;    
     font-size: 1.7em;
@@ -118,7 +116,7 @@ h4 {
     font-size: 1.2em;
 }
 
- /* De header */
+        /* De header */
  header {
     width: 100%;
     background-color: var(--kleur-achtergrond1);
@@ -136,11 +134,13 @@ h4 {
 }
     
 
-/*Opmaak tekst*/
+        /*Opmaak tekst*/
 p , .titel { 
     padding: 4% 4% 0% 4%;
     }
-    
+
+
+        /* Opmaak formulier */
 button{
     display: inline-block;
     padding: 1%;
@@ -168,7 +168,7 @@ button{
 }
 
 #blog-form button{
-    background-color: #007BFF;
+    background-color: #f5720c;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -177,10 +177,10 @@ button{
 }
 
 #blog-form button:hover{
-    background-color:#b85301f6;
+    background-color:#090400f6;
 }
 
-/*Opmaak footer*/
+        /*Opmaak footer*/
     footer{
     background-color:#b85301f6;
     padding: 4% 0%;
@@ -188,7 +188,7 @@ button{
     font-weight: bold; 
 }
         
-/*Opmaak bij schermen vanaf 768px*/
+        /*Opmaak bij schermen vanaf 768px*/
 @media only screen and (min-width: 768px) {  
 
     [class*="col-"]{
@@ -213,8 +213,7 @@ button{
     padding: 5% 5% 8% 5%;
 }
 
-  /* Navigatiebalk */
-  nav {
+nav {
     box-sizing: border-box;
     line-height: 30px;
 }

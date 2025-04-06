@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="nl">
+                       <!-- Head -->
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">      
-        <meta name="description" content="Muziekschool voor koperblazers en saxofonisten ">
-        <meta name="keywords" content="Muziekschool, saxofoon, trompet, muziekles, jazz, jazzliefhebbers, jazzmuziek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+
+        <meta name="description" content="contactgegevens van muziekschool H&amp;J">
+        <meta name="keywords" content="Muziekschool, saxofoon, trompet, muziekles, jazz, jazzliefhebbers, jazzmuziek, contact">
         <meta name="auteur" content="Elly Gomes">
         <link href="../css/main.css" rel="stylesheet" type="text/css">
-        <title>Praktijkexamen NHA Elly Gomes</title>
-    </head>
+        <title>Contact</title>
+    </head> 
+                        <!-- Body -->
     <body>
 
-    <!-- Header -->        
+        <!-- Header -->        
         <header>
             <h1>Muziekschool H&amp;J</h1>
-            <h4 class="hh4">Luisterend oor voor talent!</h4>
+            <h4>Contact</h4>
         </header>
         
-    <!-- Navigatie -->           
+        <!-- Navigatie -->           
         <nav>
             <ul class="navigatie">
                 <li><a href="../index.html">Home</a></li>
@@ -29,80 +32,82 @@
             </ul>    
         </nav>
 
-    <!-- Body -->           
+        <!-- Body -->           
         <main>
             <section class="container">
-                <!-- De linker section -->
+                <!-- De linkerkant -->
                 <div class="sectionleft">
                     <h3 class="h3left">Adresgegevens</h3>
-                    <p class="p2">Muziekschool H&amp;J<br>
-                            t.a.v Hannah en Jesse<br>
-                            Industrieterrein 37<br>
-                            5981 NK Panningen<br>
-                            0123-456789<br>
-                            muziekschoolhj@inlook.com                        
-                    </p>
-                    <!-- De iframe voor de maps -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.8061566284127!2d5.976690015596614!3d51.33308513125453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c748598f417cd3%3A0x68e3a0231132fd4f!2sPanningen-Noord!5e0!3m2!1snl!2snl!4v1668086670540!5m2!1snl!2snl" width="90%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        <p class="p2">Muziekschool H&amp;J<br>
+                                t.a.v Hannah en Jesse<br>
+                                Industrieterrein 37<br>
+                                5981 NK Panningen<br>
+                                0123-456789<br>
+                                muziekschoolhj@inlook.com                        
+                        </p>
+                    <!-- De iframe voor de plattegrond -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.8061566284127!2d5.976690015596614!3d51.33308513125453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c748598f417cd3%3A0x68e3a0231132fd4f!2sPanningen-Noord!5e0!3m2!1snl!2snl!4v1668086670540!5m2!1snl!2snl" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <!-- De linker section -->
+                
+                <!-- De rechterkant -->
                 <div class="sectionright">
                     <h3 class="h3right">Contact</h3>
-                    <h6>U kunt een bericht achterlaten via onderstaand contactformulier.</h6>
+                    <h5>U kunt een bericht achterlaten via onderstaand contactformulier.</h5>
                     <!-- Het contactformulier -->
-                    <form action="" method="post">
+                    <form method="post">
                         <table>
                             <tbody>
-                            <tr>
-                                <td>
-                                    <label for="naam">Uw voornaam</label>
-                                <input type="text" name="voornaam" maxlength="60" required="" placeholder="Uw voornaam">
-                                </td>
-                            </tr>    
-                        
-                            <tr>
-                                <td>
-                                    <label for="achternaam">Uw achternaam</label>
-                                <input type="text" name="achternaam" maxlength="60" required="" placeholder="Uw achternaam">
-                                </td>
-                            </tr> 
+                                <tr>
+                                    <td>
+                                        <label for="naam">Uw voornaam</label>
+                                    <input type="text" id="naam" name="voornaam" minlength="2" maxlength="60" required="" placeholder="Uw voornaam">
+                                    </td>
+                                </tr>    
                             
-                            <tr>
-                                <td>
-                                    <label for="email">Uw e-mailadres</label>
-                                    <input type="email" name="e-mail" maxlength="60" required="" placeholder="Uw emailadres">
-                                </td>
-                            </tr>    
-                        
-                            <tr>
-                                <td>
-                                    <label for="land">Land</label>
-                                    <select name="Land">
-                                        <option>Nederland</option>
-                                        <option>Belgie</option>
-                                        <option>Anders</option>                                        
-                                    </select>
-                                </td>
-                            </tr>    
-                            <tr>
-                                <td>
-                                    <label for="bericht">Bericht</label>
-                                    <textarea name="bericht" cols="50" rows="5" placeholder="Uw bericht hier"></textarea>
-                                </td>
-                            </tr> 
-                            <tr>
-                                <td>
-                                    <input class="button" type="submit" value="Verzenden">  
-                                </td>
-                            </tr>          
-                        </tbody></table>
+                                <tr>
+                                    <td>
+                                        <label for="achternaam">Uw achternaam</label>
+                                    <input type="text" id="achternaam" name="achternaam" minlength="2" maxlength="60" required="" placeholder="Uw achternaam">
+                                    </td>
+                                </tr> 
+                                
+                                <tr>
+                                    <td>
+                                        <label for="email">Uw e-mailadres</label>
+                                        <input type="email" id="email" name="e-mail" minlength="2" maxlength="60" required="" placeholder="Uw emailadres">
+                                    </td>
+                                </tr>    
+                            
+                                <tr>
+                                    <td>
+                                        <label for="land">Land</label>
+                                        <select id="land" name="Land">
+                                            <option>Nederland</option>
+                                            <option>Belgie</option>
+                                            <option>Anders</option>                                        
+                                        </select>
+                                    </td>
+                                </tr>    
+                                <tr>
+                                    <td>
+                                        <label for="bericht">Bericht</label>
+                                        <textarea name="bericht" id="bericht" cols="50" rows="5" placeholder="Uw bericht hier"></textarea>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <input class="button" type="submit" value="Verzenden">  
+                                    </td>
+                                </tr>          
+                            </tbody>
+                        </table>
                     </form>                        
                 </div>
             </section>    
         </main>
 
-    <!-- Footer -->           
+        <!-- Footer -->           
         <footer>
             <p class="footer">&#169; Copyright 2023 Elly Gomes
                 Ontworpen door Elly voor praktijkexamen NHA 2023<br>
