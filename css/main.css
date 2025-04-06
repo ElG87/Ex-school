@@ -76,6 +76,7 @@ a:hover{
     padding: 10px;
     border-color: var(--kleur-tekst4);
     margin: 20px;
+    border-radius: 20px;
 }
 
 #back, .knop:hover {  
@@ -126,6 +127,15 @@ a:hover{
     display: block;
     color: var(--kleur-tekst2);
 }
+
+#effect {
+    display: none;
+}
+
+  .toggler {
+    width: 500px;
+    height: 200px;
+  }
 
 
 /* Afbeeldingen op de site */
