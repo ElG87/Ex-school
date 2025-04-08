@@ -51,13 +51,13 @@ $(function() {
 
   // Pop-up knop
   $("#popup").click(function() {
-    const datum = $("#datepicker").datepicker("getDate"); // juiste selector!
+    const datum = $("#datepicker").datepicker("getDate")
     const dag = datum.getDate();
-    const maand = datum.getMonth() + 1; // maanden zijn 0-11
+    const maand = datum.getMonth() + 1;
     const jaar = datum.getFullYear();
     const datumString = `${dag}/${maand}/${jaar}`;
 
-    // Datum tonen in de dialoog
+    // Datum in de dialoog laten zien
     $("#datum").text(datumString);
 
     // Dialoog openen
