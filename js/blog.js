@@ -68,7 +68,7 @@ $(function() {
   $("#sluiten").click(function() {
     $("#dialoog").dialog("close");
   });
-});
+
 });
 
 });
