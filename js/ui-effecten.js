@@ -25,21 +25,9 @@ $( function() {
                         }, 2000 );
                         });
                 });
-                
-        
         }); 
     };
     runEffect();
 });
   
 
-
-/*
-$( function() { //Div veranderd van kleur en grootte
-    let state = true;
-    $( "#button" ).on( "click", function() {
-      
-      state = !state;
-    });
-  } );
-*/
