@@ -45,13 +45,15 @@ $(document).ready(function () {
 // Datepicker widget met uitsluitend 3 dagen in de week
 
   $(function() {
-    $("#datepicker").datepicker({
-      minDate: 0, // Alleen vanaf vandaag
-      beforeShowDay: function(date) {
-        var day = date.getDay();
-        // 1 = maandag, 2 = dinsdag, 3 = woensdag
-        return [(day >= 1 && day <= 3), ""];
-      }
-    });
+  $("#datepicker").datepicker({
+    minDate: 0, // vanaf vandaag
+    beforeShowDay: function(date) {
+
+
+      const day = date.getDay();
+      return [(day >= 1 && day <= 3), ""];
+    }
+  });
+});
   });
 });
