@@ -19,7 +19,7 @@ $(document).ready(function () {
                 const imgElement = $(this).find('img');
                 const imgSrc = imgElement.length ? imgElement.attr('src') : null;
                 
-    //De blog artikelen worden hier in de HTML gezet
+       // De artikelen worden in de blog sectie gezet
     $("#blog-content").append(`
         <div class="artikel">
             ${imgSrc ? `<img src="${imgSrc}" alt="Artikel afbeelding">` : ''}
@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
 
 
-    // Datepicker widget met uitsluitend 3 dagen in de week
+    // Datepicker widget met uitsluitend 3 dagen in de week vanaf vandaag
     $(function() {
       $("#datepicker").datepicker({
         minDate: 0, // vanaf vandaag
@@ -73,7 +73,7 @@ $(document).ready(function () {
             $("#datum").val(datumString); //Datum in het dialoogvenster zetten
             $("#sluiten").button(); //Sluitknop maken
             $("#sluiten").click(function() {
-              $("#dialoog").dialog("close"); //Dialoogvenster sluiten
+              $("#dialoog").dialog("close"); //Dialoogvenster sluiten na het klikken op de knop
             });
     });
     });
