@@ -49,7 +49,15 @@ $(document).ready(function () {
     minDate: 0, // vanaf vandaag
     beforeShowDay: function(date) {
 
+$(function() {
+  $("#dialoog").dialog({
+    autoOpen: false
+  });
 
+  $("#popup").click(function() {
+    $("#dialoog").dialog("open");
+  });
+});
       const day = date.getDay();
       return [(day >= 1 && day <= 3), ""];
     }
