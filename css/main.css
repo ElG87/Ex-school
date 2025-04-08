@@ -132,11 +132,9 @@ a:hover{
     display: none;
 }
 
-  .toggler {
-    width: 500px;
-    height: 200px;
-    overflow: hidden;
-  }
+.toggler {
+  width: 100%;
+}
 
 
 /* Afbeeldingen op de site */
