@@ -93,6 +93,7 @@ a:hover{
     width: 100%;    
 }
 .sectionleft {
+    overflow: auto;
     box-sizing: border-box;    
     background-color:  var(--kleur-site4);
     color: var(--kleur-tekst2);
@@ -100,17 +101,20 @@ a:hover{
     float: left;
     padding: 15px 15px 15px 15px;
 }
+
 .sectionright {
     box-sizing: border-box;
     background-color:  var(--kleur-site3);    
     width: 100%;   
     padding: 15px 15px 15px 25px;
 }
+
 .h3right {
     color: var(--kleur-tekst4);
     clear: both;
     padding-top: 15px;
 }
+
 /* Opmaak van de paragrafen op de homepagina */
 .p1 .p6 {
     display: block;
@@ -123,6 +127,7 @@ a:hover{
     color: var(--kleur-tekst2);    
     text-align: left;   
 }
+
 .p3 .p4 {
     display: block;
     color: var(--kleur-tekst2);
@@ -132,10 +137,9 @@ a:hover{
     display: none;
 }
 
-  .toggler {
-    width: 500px;
-    height: 200px;
-  }
+.toggler {
+  width: 100%;
+}
 
 
 /* Afbeeldingen op de site */
@@ -156,13 +160,16 @@ a:hover{
         width: 33%;
         float: left;
     }
+
     .sectionright {
         width: 65%;
         float: right;
     }
+
     .h3right {
         padding-top: 0;    
     }
+
  /* Navigatiebalk */
  nav {
     box-sizing: border-box;
@@ -198,6 +205,7 @@ background-color: rgb(207, 91, 2);
 .artikelh {
     padding: 10px;
 }
+
 .artikelj {
     padding: 10px;
 }
@@ -206,6 +214,7 @@ background-color: rgb(207, 91, 2);
 span {
     font-weight: bold;
 }
+
 /* De maps iframe op de contact pagina */
 iframe {
     padding: 20px;
@@ -220,11 +229,16 @@ input, select, textarea {
     border: 1px solid var(--kleur-border1);
     border-radius: 5px;
 }
+
 .button {
     width: 30%;
     background-color: var(--kleur-site2); 
     color: var(--kleur-tekst1);
 }
+
+.toggler {
+    overflow: hidden;
+  }
 
     /*Opmaak footer*/
     footer{

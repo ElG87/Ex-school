@@ -33,7 +33,7 @@
             </ul>    
         </nav>
     
-    <!-- Body --> 
+                                        <!-- Body --> 
     <div class="container">
         <section class="side">
             <h2>HJ blog!</h2>
@@ -43,35 +43,41 @@
         </section>
             <div id="blog">
                 <button id="toggle-blog" class="knop">Toon/verberg blogs</button>
-                <!-- Blogs laden met Ajax -->
+
+                                        <!-- Blogs laden met Ajax -->
                 <div id="blog-content">
                 </div>
             </div>
         </div>
-    <section>
+        <section>
                 <h3>Kom voor een proefles!</h3>
                 <p>Voor de komende periode kun je een dag kiezen om een proefles mee te doen.
-                    Dit kan op maandag, dinsdag of woensdag. De proefles is gratis en vrijblijvend. 
+                    Dit kan op maandag, dinsdag of woensdag. De proefles is gratis en vrijblijvend. <br>
                     Je kunt je aanmelden via het contactformulier. 
                     Na aanmelding ontvang je een bevestiging van de datum en tijd van de proefles.
                     De proefles duurt 30 minuten en is bedoeld om kennis te maken met de docent en het instrument.
                     Hier onder kun je een datum kiezen voor de proefles.
                 </p>
-                <div class="kiesDatum"><label for="datepicker">Kies hier je datum:</label> <br>
-                    <input type="text" id="datepicker" name="datepicker"></p> <!-- Datepicker --></div> 
+                                         <!-- Datepicker -->
+                <div class="kiesDatum"><label for="datepicker">Kies hier je datum:</label><br>
+                    <input type="text" id="datepicker" name="datepicker"></p>
+                </div> 
                 <div class="kiesDatum"><button id="popup">Bevestigen</button></div>
-                <div id="dialoog" title="Proefles aanmelden">
-                <p>Bedankt voor je interesse!</p>
-                <p>Je hebt je proefles op <span id="datum"></span> aangevraagd.</p> <!-- Hier komt de datum van de datepicker -->
-                <p>Je ontvangt een bevestiging van de datum en tijd van de proefles.</p>
-                <button id="sluiten">Ok</button>
+        
+                <div id="dialoog" title="Proefles aanmelden"> <!-- Dialoogvenster-->
+                    <p>Bedankt voor je interesse!</p>
+                    <p>Je hebt je proefles op <span id="datum"></span> aangevraagd.</p> <!-- Hier komt de datum van de datepicker in de tekst -->
+                    <p>Je ontvangt een bevestiging van de datum en tijd van de proefles.</p>
+                    <button id="sluiten">Ok</button>
                 </div>
-    </section>
+        </section>
     <!-- Footer -->           
     <footer class="col-12">
         <div id="footer">
             <h5 id="footer-tekst">&#169; Copyright 2023 Elly Gomes
-            Ontworpen door Elly voor praktijkexamen NHA 2023
+            Ontworpen door Elly voor praktijkexamen NHA 2023 <br>
+                    (Dit is een oefenopdracht, alle informatie op deze website is fictief) 
+            </p>
             </h5>
         </div>
     </footer>
@@ -83,10 +89,11 @@
             <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- jQuery UI -->
+            <!-- jQuery UI -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="../js/datepicker-nl.js"></script>
-<!-- Mijn script -->
+
+            <!-- Mijn script -->
             <script src="../js/blog.js"></script>
     </body>
 </html>

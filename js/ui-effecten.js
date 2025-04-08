@@ -6,7 +6,7 @@ $( function() {
       let options = {};
         $( "#button" ).on( "click", function() {
 
-            $( "#effect" ).toggle( selectedEffect, options, 500, function() {
+            $("#effect").slideToggle(500, function() {
             if ( selectedEffect === "scale" ) {
                 options = { percent: 100 };
                 } else if ( selectedEffect === "size" ) {
