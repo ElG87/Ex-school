@@ -43,29 +43,31 @@ $(document).ready(function () {
 
 
 // Datepicker widget met uitsluitend 3 dagen in de week
-
-  $(function() {
+$(function() {
+  // Dialoogvenster klaarzetten
   $("#dialoog").dialog({
     autoOpen: false
   });
 
+  // Pop-up knop
   $("#popup").click(function() {
-    const datum = $("#datepicker").datepicker("getDate");
+    const datum = $("#datepicker").datepicker("getDate"); // juiste selector!
     const dag = datum.getDate();
-    const maand = datum.getMonth() + 1;
+    const maand = datum.getMonth() + 1; // maanden zijn 0-11
     const jaar = datum.getFullYear();
-    const datumstring = `${dag}/${maand}/${jaar}`;
-    
-    $("#datum").text(datumstring); // Zet datum in de <span id="datum">
+    const datumString = `${dag}/${maand}/${jaar}`;
+
+    // Datum tonen in de dialoog
+    $("#datum").text(datumString);
+
+    // Dialoog openen
     $("#dialoog").dialog("open");
   });
 
+  // Sluitknop
   $("#sluiten").click(function() {
     $("#dialoog").dialog("close");
   });
-
-  // Zorg dat de datepicker werkt
-  $("#datepicker").datepicker();
 });
 });
 
