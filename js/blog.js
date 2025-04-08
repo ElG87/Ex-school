@@ -49,6 +49,11 @@ $(document).ready(function () {
     minDate: 0, // vanaf vandaag
     beforeShowDay: function(date) {
 
+      const day = date.getDay();
+      return [(day >= 1 && day <= 3), ""];
+    }
+  });
+
 $(function() {
   $("#dialoog").dialog({
     autoOpen: false
@@ -58,9 +63,6 @@ $(function() {
     $("#dialoog").dialog("open");
   });
 });
-      const day = date.getDay();
-      return [(day >= 1 && day <= 3), ""];
-    }
-  });
+
 });
 });
