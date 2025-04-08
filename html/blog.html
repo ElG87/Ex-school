@@ -50,35 +50,23 @@
         </div>
     <section>
                 <h3>Kom voor een proefles!</h3>
-<p>
-  Voor de komende periode kun je een dag kiezen om een proefles mee te doen.  
-  Dit kan op maandag, dinsdag of woensdag. De proefles is gratis en vrijblijvend.
-  Je kunt je aanmelden via het contactformulier.  
-  Na aanmelding ontvang je een bevestiging van de datum en tijd van de proefles.  
-  De proefles duurt 30 minuten en is bedoeld om kennis te maken met de docent en het instrument.
-  Hier onder kun je een datum kiezen voor de proefles.
-</p>
-
-<!-- Datum kiezen -->
-<div class="kiesDatum">
-  <label for="datepicker">Kies hier je datum:</label><br>
-  <input type="text" id="datepicker" name="datepicker">
-</div>
-
-<!-- Bevestig-knop -->
-<div class="kiesDatum">
-  <button id="popup">Bevestigen</button>
-</div>
-
-<!-- Dialoogvenster -->
-<div id="dialoog" title="Proefles aanmelden">
-  <p>Bedankt voor je interesse!</p>
-  <p>Je hebt je proefles op <span id="datum"></span> aangevraagd.</p>
-  <p>Je ontvangt een bevestiging van de datum en tijd van de proefles.</p>
-  <button id="sluiten">OK</button>
-</div>
-</section>
-    
+                <p>Voor de komende periode kun je een dag kiezen om een proefles mee te doen.
+                    Dit kan op maandag, dinsdag of woensdag. De proefles is gratis en vrijblijvend. 
+                    Je kunt je aanmelden via het contactformulier. 
+                    Na aanmelding ontvang je een bevestiging van de datum en tijd van de proefles.
+                    De proefles duurt 30 minuten en is bedoeld om kennis te maken met de docent en het instrument.
+                    Hier onder kun je een datum kiezen voor de proefles.
+                </p>
+                <div class="kiesDatum"><label for="datepicker">Kies hier je datum:</label> <br>
+                    <input type="text" id="datepicker" name="datepicker"></p> <!-- Datepicker --></div> 
+                <div class="kiesDatum"><button id="popup">Bevestigen</button></div>
+                <div id="dialoog" title="Proefles aanmelden">
+                <p>Bedankt voor je interesse!</p>
+                <p>Je hebt je proefles op <span id="datum"></span> aangevraagd.</p> <!-- Hier komt de datum van de datepicker -->
+                <p>Je ontvangt een bevestiging van de datum en tijd van de proefles.</p>
+                <button id="sluiten">Ok</button>
+                </div>
+    </section>
     <!-- Footer -->           
     <footer class="col-12">
         <div id="footer">
