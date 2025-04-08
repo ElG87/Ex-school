@@ -40,4 +40,18 @@ $(document).ready(function () {
             $("#blog-content").append('<p>Fout bij laden van artikelen.</p>');
         },
     });
+
+
+// Datepicker widget met uitsluitend 3 dagen in de week
+
+  $(function() {
+    $("#datepicker").datepicker({
+      minDate: 0, // Alleen vanaf vandaag
+      beforeShowDay: function(date) {
+        var day = date.getDay();
+        // 1 = maandag, 2 = dinsdag, 3 = woensdag
+        return [(day >= 1 && day <= 3), ""];
+      }
+    });
+  });
 });
