@@ -54,8 +54,8 @@ $(function() {
     autoOpen: false
   });
 
-  $("#popup").click(function() {
-    $("#dialoog").dialog("open");
+  $("#dialoog").click(function() {
+    $("#popup").dialog("open");
   });
 });
       const day = date.getDay();
