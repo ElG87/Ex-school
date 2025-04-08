@@ -187,19 +187,20 @@ img {
     font-size: 16px;
     margin-bottom: 20px;            
 }
+/* Bevestigingsknop*/
 #popup{
     padding: .4em 1em;
-	display: inline-block;
-	position: relative;
-	line-height: normal;
-	margin-right: .1em;
-	cursor: pointer;
-	vertical-align: middle;
-	text-align: center;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     overflow: visible;
 }
 
