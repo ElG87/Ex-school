@@ -45,23 +45,28 @@ $(document).ready(function () {
 // Datepicker widget met uitsluitend 3 dagen in de week
 
   $(function() {
-  $("#datepicker").datepicker({
-    minDate: 0, // vanaf vandaag
-    beforeShowDay: function(date) {
-
-      const day = date.getDay();
-      return [(day >= 1 && day <= 3), ""];
-    }
-  });
-
-$(function() {
   $("#dialoog").dialog({
     autoOpen: false
   });
 
   $("#popup").click(function() {
+    const datum = $("#datepicker").datepicker("getDate");
+    const dag = datum.getDate();
+    const maand = datum.getMonth() + 1;
+    const jaar = datum.getFullYear();
+    const datumstring = `${dag}/${maand}/${jaar}`;
+    
+    $("#datum").text(datumstring); // Zet datum in de <span id="datum">
     $("#dialoog").dialog("open");
   });
+
+  $("#sluiten").click(function() {
+    $("#dialoog").dialog("close");
+  });
+
+  // Zorg dat de datepicker werkt
+  $("#datepicker").datepicker();
+});
 });
 
 });
